@@ -19,20 +19,42 @@ header {
     top: 0;
     left: 0;
     background: transparent; /* Fondo transparente */
-    padding: 20px 0;
+    padding: 20px 50px; /* Aumenté el padding-left a 50px */
+    display: flex;
+    justify-content: space-between; /* Separa el logo y el menú */
+    align-items: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
+/* Estilos del logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Tamaño del logo ajustado */
+    margin-right: 50px; /* Espacio entre el logo y el texto */
+}
+
+.chinese-text {
+    font-family: "SimSun", serif; /* Fuente que simula letras chinas */
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Estilos del menú de navegación */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end; /* Alinea los elementos a la derecha */
-    padding-right: 50px; /* Espaciado a la derecha */
+    flex-wrap: wrap; /* Permite que el menú se ajuste en pantallas pequeñas */
 }
 
 nav ul li {
-    margin-left: 40px; /* Espacio entre elementos del menú */
+    margin-left: 20px; /* Reducir el espacio entre elementos del menú */
 }
 
 nav ul li a {
@@ -48,8 +70,8 @@ nav ul li a:hover {
     color: #ffcc00; /* Cambia el color al pasar el mouse (amarillo dorado) */
 }
 
-/* Estilos del ícono de la canastita */
-.fa-shopping-basket {
+/* Estilos del ícono del carrito de compras */
+.fa-shopping-cart {
     font-size: 1.5rem; /* Tamaño del ícono */
     margin-right: 5px; /* Espacio entre el ícono y el texto (si lo hubiera) */
 }
