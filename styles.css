@@ -15,15 +15,16 @@ body {
 /* Estilos del header */
 header {
     width: 100%;
-    position: absolute;
+    position: fixed; /* Fija el header en la parte superior */
     top: 0;
     left: 0;
     background: transparent; /* Fondo transparente */
-    padding: 20px 50px; /* Aumenté el padding-left a 50px */
+    padding: 20px 50px; /* Padding lateral */
     display: flex;
     justify-content: space-between; /* Separa el logo y el menú */
     align-items: center;
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
 }
 
 /* Estilos del logo */
@@ -34,7 +35,7 @@ header {
 
 .logo img {
     height: 40px; /* Tamaño del logo ajustado */
-    margin-right: 50px; /* Espacio entre el logo y el texto */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
 .chinese-text {
@@ -76,9 +77,25 @@ nav ul li a:hover {
     margin-right: 5px; /* Espacio entre el ícono y el texto (si lo hubiera) */
 }
 
+/* Estilos de la sección de la imagen */
+.image-section {
+    margin-top: 100px; /* Espacio entre el header y la imagen */
+    text-align: right; /* Alinea la imagen a la derecha */
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo de la sección */
+    padding-right: 50px; /* Espaciado a la derecha */
+}
+
+.image-section img {
+    width: 50%; /* Ajusta el tamaño de la imagen */
+    max-width: 400px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
 /* Estilos del contenido principal */
 main {
     text-align: center;
+    margin-top: 50px; /* Espacio entre la imagen y el contenido principal */
 }
 
 main h1 {
