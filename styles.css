@@ -1,4 +1,6 @@
+/* ================================================== */
 /* Estilos generales */
+/* ================================================== */
 body {
     margin: 0;
     padding: 0;
@@ -13,7 +15,9 @@ body {
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
-/* Estilos del header */
+/* ================================================== */
+/* Estilos del Header */
+/* ================================================== */
 header {
     width: 100%;
     position: fixed; /* Fija el header en la parte superior */
@@ -28,7 +32,7 @@ header {
     z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
 }
 
-/* Estilos del logo */
+/* Logo del Header */
 .logo {
     display: flex;
     align-items: center;
@@ -39,13 +43,14 @@ header {
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
+/* Texto en chino (si lo agregas en el futuro) */
 .chinese-text {
     font-family: "SimSun", serif; /* Fuente que simula letras chinas */
     font-size: 1.5rem;
     color: white;
 }
 
-/* Estilos del menú de navegación */
+/* Menú de navegación */
 nav ul {
     list-style: none;
     margin: 0;
@@ -72,13 +77,15 @@ nav ul li a:hover {
     color: #ffcc00; /* Cambia el color al pasar el mouse (amarillo dorado) */
 }
 
-/* Estilos del ícono del carrito de compras */
+/* Ícono del carrito de compras */
 .fa-shopping-cart {
     font-size: 1.5rem; /* Tamaño del ícono */
     margin-right: 5px; /* Espacio entre el ícono y el texto (si lo hubiera) */
 }
 
-/* Estilos de la sección hero (imagen y texto) */
+/* ================================================== */
+/* Estilos de la Sección Hero (Home) */
+/* ================================================== */
 .hero-section {
     display: flex;
     align-items: center; /* Alinea el texto y la imagen verticalmente */
@@ -90,6 +97,7 @@ nav ul li a:hover {
     flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
 }
 
+/* Texto de la sección Hero */
 .hero-text {
     width: 50%; /* Ancho del texto */
     min-width: 300px; /* Ancho mínimo para evitar que el texto sea demasiado estrecho */
@@ -106,6 +114,7 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
+/* Botón de llamado a la acción (CTA) */
 .cta-button {
     background-color: #ffcc00; /* Color de fondo del botón */
     color: #6c0202; /* Color del texto del botón */
@@ -120,6 +129,7 @@ nav ul li a:hover {
     background-color: #e6b800; /* Cambia el color al pasar el mouse */
 }
 
+/* Imagen de la sección Hero */
 .hero-image {
     width: 50%; /* Ancho de la imagen */
     text-align: right; /* Alinea la imagen a la derecha */
@@ -131,7 +141,9 @@ nav ul li a:hover {
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
-/* Estilos del contenido principal */
+/* ================================================== */
+/* Estilos del Contenido Principal (Main) */
+/* ================================================== */
 main {
     text-align: center;
     margin-top: 50px; /* Espacio entre la imagen y el contenido principal */
@@ -147,7 +159,9 @@ main p {
     font-size: 1.5rem;
 }
 
+/* ================================================== */
 /* Media Queries para diseño responsivo */
+/* ================================================== */
 @media (max-width: 768px) {
     /* Ajustes para tablets y móviles */
     header {
