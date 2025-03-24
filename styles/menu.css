@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* 🔹 Imagen por defecto */
+.imgMenu {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: fixed;
+    left: 0; /* Pegada al lado izquierdo */
+    top: 0;
+    width: 50vw; /* Por defecto, ocupa el 50% de la pantalla */
+    transition: width 0.3s ease-in-out; /* Suaviza los cambios */
+}
+
+.pmenu {
+    color: #878780;
+    font-family: italic;
+    font-size: 15px;
+}
+
+.menuCalificate {
+    display: flex;
+    gap: 12px;
+}
+
+.h3Menu {
+    color: #ffffff;
+    font-family: initial;
+    font-size: 48px;
+}
+
+.menuTexBoder {
+    top: 650px;
+    left: 300px;
+    width: 400px; /* Ajuste de tamaño de ancho */
+    position: absolute;
+    transform: translate(-50%, -50%); /* Ajusta el centrado */
+    color: white; /* Color del texto */
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.871); /* Fondo semitransparente para mejor visibilidad */
+    padding: 25px 30px;
+    border-radius: 5px;
+    text-align: center;
+}
