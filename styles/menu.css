@@ -14,15 +14,14 @@ body {
     height: auto;
 }
 
-/* 🔹 Imagen por defecto */
+/* Imagen SIEMPRE cubriendo toda la altura de la pantalla */
 .imgMenu {
-    max-width: 100%;
-    height: auto;
-    display: block;
     position: fixed;
-    left: 0; /* Pegada al lado izquierdo */
+    height:  0; /* Pegada al lado derecho */
     top: 0;
-    width: 50vw; /* Por defecto, ocupa el 50% de la pantalla */
+    width: 50vw; /* Por defecto, ocupa el 50% del ancho de la pantalla */
+    height: 100vh; /*  Ocupar toda la altura de la pantalla */
+    object-fit: cover; /* Asegura que se cubra sin deformarse */
     transition: width 0.3s ease-in-out; /* Suaviza los cambios */
 }
 
@@ -46,13 +45,13 @@ body {
 .menuTexBoder {
     top: 650px;
     left: 300px;
-    width: 400px; /* Ajuste de tamaño de ancho */
+    width: 500px; /* Ajuste de tamaño de ancho */
     position: absolute;
     transform: translate(-50%, -50%); /* Ajusta el centrado */
     color: white; /* Color del texto */
     font-size: 20px;
     background: rgba(0, 0, 0, 0.871); /* Fondo semitransparente para mejor visibilidad */
-    padding: 25px 30px;
+    padding: 25px 40px;
     border-radius: 5px;
     text-align: center;
 }
