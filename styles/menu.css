@@ -43,15 +43,16 @@ body {
 }
 
 .menuTexBoder {
-    top: 650px;
-    left: 300px;
-    width: 500px; /* Ajuste de tamaño de ancho */
     position: absolute;
-    transform: translate(-50%, -50%); /* Ajusta el centrado */
-    color: white; /* Color del texto */
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.871); /* Fondo semitransparente para mejor visibilidad */
-    padding: 25px 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.871);
     border-radius: 5px;
     text-align: center;
+    transition: all 0.3s ease; /* Suaviza los cambios */
+    
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Mejor contraste */
+    backdrop-filter: blur(5px); /* Efecto de vidrio esmerilado */
+    max-width: 500px; /* Tamaño máximo */
+    min-width: 200px; /* Tamaño mínimo */
 }
